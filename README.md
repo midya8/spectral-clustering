@@ -106,3 +106,20 @@ Installed-wheel reproduction: `pip wheel --no-deps . -w dist`, install the wheel
 The full-data affinity is a design assumption. Positive floating weights, including tiny RBF values, define connectivity; underflowed zeros are absent edges. Counts do not use a plotting threshold. kNN ties choose the lower original row index, so duplicates may be index-sensitive. Retained eigenvalue boundary ties are refused. K-means may reach a local optimum; restarts do not certify a global optimum. ARI uses supplied generator labels, not independent natural classes. No predictive, density, uncertainty, fairness, robustness, causal or deployment claim follows from these fixtures.
 
 MIT code and original synthetic fixtures. Algorithm attribution and primary references are in [METHOD.md](METHOD.md). Attribution is not endorsement.
+
+## Check the installed package
+
+```sh
+python examples/check_installed.py --section tests
+python examples/check_installed.py --section commands
+```
+
+The helper builds a wheel and installs it in a clean environment. It copies the
+Python tests, examples and static docs outside the checkout, never library Python
+source. All six module origins must stay in the installed environment before and
+after the full test suite. The command section compares complete source and
+installed outputs for fresh and archived reports, all eighteen graph fits, both
+audits, six sensitivity cases and every exported script. The existing wheel check
+stays in CI too. These are same-runtime packaging comparisons, not an independent
+numerical oracle or a cross-version bitwise claim. Both module entrypoints are
+checked; the package has no console script.
