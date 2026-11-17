@@ -1,6 +1,6 @@
 # Spectral clustering
 
-SpectralLab fits normalized spectral clustering on small synthetic point sets. Inspect the affinity weights, eigenpairs, rounding restarts and cut contributions, then compare how different graph choices change the partition.
+This implementation fits normalized spectral clustering on small synthetic point sets. Inspect the affinity weights, eigenpairs, rounding restarts and cut contributions, then compare how different graph choices change the partition.
 
 [Live graph inspector](https://midya8.github.io/spectral-clustering/) · [Method and limits](METHOD.md) · [Reproducible archive](examples/report.json)
 
