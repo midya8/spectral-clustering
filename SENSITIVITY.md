@@ -1,6 +1,6 @@
 # Smooth geometry, discrete labels
 
-SpectralLab v0.2 adds a fixed-graph-weight sensitivity laboratory. It does not differentiate point coordinates, nearest-neighbor identities, RBF bandwidths or a cluster-label function. It does not learn a graph. The original v0.1 graph inspector and all its data remain intact.
+Spectral clustering v0.2 adds a fixed-graph-weight sensitivity laboratory. It does not differentiate point coordinates, nearest-neighbor identities, RBF bandwidths or a cluster-label function. It does not learn a graph. The original v0.1 graph inspector and all its data remain intact.
 
 ## Run and inspect
 
@@ -10,7 +10,7 @@ python -m spectrallab.sensitivity audit examples/sensitivity.json
 python -m spectrallab.sensitivity export examples/sensitivity.json > docs/sensitivity-data.js
 ```
 
-Open `docs/sensitivity.html` locally or use the [published inspector](https://midya8.github.io/spectrallab/sensitivity.html). No service, model download, private data or browser eigensolver is used. Python/NumPy produces actual finite refits; scalar JavaScript independently reconstructs degree response, full projector derivative, fixed-cut derivatives, distances and selected matrix rows. Browser controls select archived fits, not new online optimization.
+Open `docs/sensitivity.html` locally or use the [published inspector](https://midya8.github.io/spectral-clustering/sensitivity.html). No service, model download, private data or browser eigensolver is used. Python/NumPy produces actual finite refits; scalar JavaScript independently reconstructs degree response, full projector derivative, fixed-cut derivatives, distances and selected matrix rows. Browser controls select archived fits, not new online optimization.
 
 ## What changes
 
