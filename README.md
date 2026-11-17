@@ -1,8 +1,8 @@
-# SpectralLab
+# Spectral clustering
 
 SpectralLab fits normalized spectral clustering on small synthetic point sets. Inspect the affinity weights, eigenpairs, rounding restarts and cut contributions, then compare how different graph choices change the partition.
 
-[Live graph inspector](https://midya8.github.io/spectrallab/) · [Method and limits](METHOD.md) · [Reproducible archive](examples/report.json)
+[Live graph inspector](https://midya8.github.io/spectral-clustering/) · [Method and limits](METHOD.md) · [Reproducible archive](examples/report.json)
 
 
 ## Choose a calculation
@@ -15,7 +15,7 @@ remain separate from the projector calculation.
 
 ## Edge-weight sensitivity (0.2)
 
-[Open the graph-weight sensitivity inspector](https://midya8.github.io/spectrallab/sensitivity.html).
+[Open the graph-weight sensitivity inspector](https://midya8.github.io/spectral-clustering/sensitivity.html).
 Manual normalized-Laplacian derivatives include both degree responses; a
 basis-invariant spectral projector derivative uses only cross-boundary
 spectral denominators. Four original base graphs have 28 fixed finite states,
